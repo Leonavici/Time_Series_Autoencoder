@@ -1,14 +1,14 @@
 # Time series detection using autoencoder based feature engineering
 
-I created a model as part of my Master's thesis that aims to extract relevant information or features from a wide range of time series data, specifically using data from the [UEA $ UCR Repository](https://www.timeseriesclassification.com/). The final version of the model is able to effectively condense the time series into a vector of only 4 values, and can handle time series of any length, though a maximum length must be set before training.The model is based on an autoencoder architecture, and I explored two different architectures: a Convolution Autoencoder and a Variational Convolution Autoencoder. This feature extraction method is particularly effective for time series data with low entropy, but struggles with those of high entropy. To evaluate the model's performance, the features extracted from the latent space were compared with the catch22 feature set on a detection task (binary classification). A combined autoencoder-catch22 model was also created, which had an AUC score of 0.9416, which was slightly lower than the catch22 model alone, but had more than double the speed on inference.
+I created a model as part of my Master's thesis that aims to extract relevant information or features from a wide range of time series data, specifically using data from the [UEA % UCR Repository](https://www.timeseriesclassification.com/). The final version of the model is able to effectively condense the time series into a vector of only 4 values, and can handle time series of any length, though a maximum length must be set before training.The model is based on an autoencoder architecture, and I explored two different architectures: a Convolution Autoencoder and a Variational Convolution Autoencoder. This feature extraction method is particularly effective for time series data with low entropy, but struggles with those of high entropy. To evaluate the model's performance, the features extracted from the latent space were compared with the catch22 feature set on a detection task (binary classification). A combined autoencoder-catch22 model was also created, which had an AUC score of 0.9416, which was slightly lower than the catch22 model alone, but had more than double the speed on inference.
 
 ## Latent space visualizations
 
 | Dataset | t-SNE   | UMAP  |
 | :-----------: | :-----------: | :-----------: |
-| ECGFiveDays | <img src="data/images/ECGFiceDays-tsne.png" height = "200" >  | <img src="ECGFiceDays-umap.png" height = "200" >  |
-| PhalangesOutlinesCorrect  | <img src="data/images/PhalangesOutlineCorrect-tsne.png" height = "200" >  | <img src="data/images/PhalangesOutlineCorrect-umap.png" height = "200" >  |
-| Wafer  | <img src="data/images/Wafer-tsne.png" height = "200" >  | <img src="data/images/Wafer-umap.png" height = "200" >  |
+| ECGFiveDays | <img src="data/images/ECGFiceDays-tsne.png" height = "300" >  | <img src="data/images/ECGFiceDays-umap.png" height = "300" >  |
+| PhalangesOutlinesCorrect  | <img src="data/images/PhalangesOutlineCorrect-tsne.png" height = "300" >  | <img src="data/images/PhalangesOutlineCorrect-umap.png" height = "300" >  |
+| Wafer  | <img src="data/images/Wafer-tsne.png" height = "300" >  | <img src="data/images/Wafer-umap.png" height = "300" >  |
 
 ## Accuracies on all datasets
 
