@@ -14,6 +14,8 @@ I created a model as part of my Master's thesis that aims to extract relevant in
 
 The model is optimized to to achieve the best possible time-series reconstruction quality. Although it is a universal model, meaning it can be used for any time-series, it may not perform well on time series data that has high levels of randomness or uncertainty (high entropy).
 
+Note: reconstructions are based on only 4 numeric features, as extracted on a bottleneck of the Autoencoder.
+
 | HandOutlines | ShapeletSim   |
 | :-----------: | :-----------: |
 <img src="data/images/HandOutlines.png" height = "300" >  | <img src="data/images/ShapeletSim.png" height = "300" >  |
