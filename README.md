@@ -10,6 +10,16 @@ I created a model as part of my Master's thesis that aims to extract relevant in
 | PhalangesOutlinesCorrect  | <img src="data/images/PhalangesOutlineCorrect-tsne.png" height = "300" >  | <img src="data/images/PhalangesOutlineCorrect-umap.png" height = "300" >  |
 | Wafer  | <img src="data/images/Wafer-tsne.png" height = "300" >  | <img src="data/images/Wafer-umap.png" height = "300" >  |
 
+## Reconstruction examples
+
+Model is trained with the loss function aimed at optimizing for reconstruction quality. Even though the model is universal, i.e. one trained model is fit for all, it doesn't work on time series with high entropy.
+
+The model is optimized to to achieve the best possible time-series reconstruction quality. Although it is a universal model, meaning it can be used for any time-series, it may not perform well on time series data that has high levels of randomness or uncertainty (high entropy).
+
+| HandOutlines | ShapeletSim   |
+| :-----------: | :-----------: |
+<img src="data/images/HandOutlines.png" height = "300" >  | <img src="data/images/ShapeletSim.png" height = "300" >  |
+
 ## Accuracies on all datasets
 
 | **Dataset**                   | **Variational Convolution Autoencoder<br>** | **Convolution Autoencoder** | **Catch22** | **Combined** |
